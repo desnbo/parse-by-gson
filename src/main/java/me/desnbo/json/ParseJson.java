@@ -53,7 +53,7 @@ public class ParseJson {
 			JsonObject result = playlist.get("result").getAsJsonObject();
 			JsonArray tracks = result.get("tracks").getAsJsonArray(); // 获取歌曲数组
 			StringBuilder sb = new StringBuilder();
-			sb.append("var playlist=[");
+			sb.append("[");
 			for (JsonElement temp : tracks) {
 				JsonObject track = (JsonObject) temp;// 遍历数组获取单独歌曲
 				sb.append("{\n  \"title\": \"");
