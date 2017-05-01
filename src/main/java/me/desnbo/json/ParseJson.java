@@ -141,6 +141,7 @@ public class ParseJson {
 		}
 	}
 
+	// 解析json对象
 	public void parseObj() {
 
 		try {
@@ -163,6 +164,7 @@ public class ParseJson {
 		}
 	}
 
+	// 解析json数组
 	public void parseArr() {
 
 		try {
